@@ -38,3 +38,4 @@ Assignment1 consists of three nodes.
 - **stageros**: this node consists in the 2d space simulator.
 - **target_server**: this node communicates with **control_robot** by providing it a new random target position each time that the robot reaches the previous one.
 - **control_robot**: this node controls the motion of the robot in the 2d environment provided by **stageros**. It recives the actual position of the robot from the lattest, using the topic **odom**, in order to verify if the robot has actually achieved the random position target. When the distance between the robot and the target position is under a certain pre-determined threshold it modifies the velocity of the robot trough the topic **cmd_vel**.
+![rosgraph](https://user-images.githubusercontent.com/93039889/138612308-201e8c50-1acf-488b-978d-d073f74e8c22.png)
